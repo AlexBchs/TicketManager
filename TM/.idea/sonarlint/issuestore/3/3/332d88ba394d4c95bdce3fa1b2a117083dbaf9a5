@@ -1,0 +1,18 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ùòö»
+G
+java:S1874)",Remove this use of "Date"; it is deprecated.(Ìåíåûÿÿÿÿ
+J
+java:S1874)"/Remove this use of "getYear"; it is deprecated.(Ìåíåûÿÿÿÿ
+K
+java:S1874)"0Remove this use of "getMonth"; it is deprecated.(Ìåíåûÿÿÿÿ
+J
+java:S1874)"/Remove this use of "getDate"; it is deprecated.(Ìåíåûÿÿÿÿ
+G
+java:S18749",Remove this use of "Date"; it is deprecated.(Ù¹ÏÅøÿÿÿÿ
+J
+java:S18749"/Remove this use of "getYear"; it is deprecated.(Ù¹ÏÅøÿÿÿÿ
+K
+java:S18749"0Remove this use of "getMonth"; it is deprecated.(Ù¹ÏÅøÿÿÿÿ
+J
+java:S18749"/Remove this use of "getDate"; it is deprecated.(Ù¹ÏÅøÿÿÿÿ
