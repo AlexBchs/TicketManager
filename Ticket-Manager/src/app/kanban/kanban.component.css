@@ -1,0 +1,97 @@
+.dragdrop-wrapper {
+  border: solid 2px #eee;
+  border-radius: 5px;
+  margin: 20px 10px; /* top right bot left */
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,223,223,1) 35%, rgba(203,203,203,1) 100%);
+  padding: 20px 30px 10px 30px;  /* top right bot left */
+}
+
+.dragdrop-inner {
+  color: rgba(0, 0, 0, 0.87);
+  border-bottom: solid 1px #404040;
+  cursor: move;
+  background: #f2f2f2;
+  margin-bottom: 10px;
+  text-align: left;
+  border-radius: 5px;
+  min-height: 100px;
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+  0 8px 10px 1px rgba(0, 0, 0, 0.14),
+  0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.dragdrop-inner:last-child {
+  border: none;
+}
+
+.dragdrop-wrapper.cdk-drop-list-dragging
+.dragdrop-inner:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.btnEdit {
+  margin-right: 8px;
+  margin-left: 3px;
+}
+
+.form-control {
+  width: 90%;
+  margin: 25px auto 0px; /*Top Right/Left Bot*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#kanban {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cNew {
+  border-left-width: 2px;
+  border-left-color: limegreen;
+  border-radius: 5px;
+}
+.cToDo {
+  border-left-width: 2px;
+  border-left-color: blue;
+  border-radius: 5px;
+}
+.cDoing {
+  border-left-width: 2px;
+  border-left-color: red;
+  border-radius: 5px;
+}
+.cDone {
+  border-left-width: 2px;
+  border-left-color: black;
+  border-radius: 5px;
+}
+
+h2 {
+  margin-left: 4px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 900;
+}
+
+.dropList {
+  min-height: 800px;
+  flex: 1;
+  overflow: auto;
+}

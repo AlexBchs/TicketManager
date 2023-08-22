@@ -1,0 +1,39 @@
+h2 {
+  margin: 0px 10px;
+}
+
+label {
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+button {
+  margin: 10px 10px 10px 0px; /* top right bot left */
+}
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; /* red */
+}
+
+.formAdd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-card {
+  min-width: 1300px;
+  min-height: 200px;
+  background: radial-gradient(circle, rgba(242,242,242,1) 0%, rgba(233,233,233,1) 35%, rgba(223,223,223,1) 100%);
+  border-radius: 5px;
+  border: solid 1px black;
+}
+
+mat-form-field {
+  width: 80%;
+  margin: auto;
+}

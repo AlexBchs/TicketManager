@@ -1,0 +1,53 @@
+button {
+  margin-right: 5px;
+}
+
+button:hover{
+  background-color: black;
+}
+
+table {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+  min-width: 20%;
+}
+
+h2 {
+  margin-left: 4px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+th.mat-sort-header {
+  font-weight: bold;
+  background-color: lightgray;
+}
+
+mat-form-field {
+  width: 80%;
+  margin: auto;
+}
+
+mat-paginator {
+  padding-right: 160px;
+}
+
+.filter-container {
+  text-align: center;
+}
+
+.filter-field,
+.reset-button {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.filter-field {
+  margin-right: 20px;
+  max-width: 20%;
+}

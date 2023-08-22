@@ -1,0 +1,42 @@
+button {
+  margin: 10px 10px 5px 0px;
+}
+
+input, textarea, select {
+  max-width: 60%;
+}
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; /* red */
+}
+
+mat-card {
+  width: 60%;
+  min-width: 1300px;
+  min-height: 200px;
+  background: radial-gradient(circle, rgba(242,242,242,1) 0%, rgba(233,233,233,1) 35%, rgba(223,223,223,1) 100%);
+  border-radius: 5px;
+  border: solid 1px black;
+  padding: 2px 0px 0px 10px;
+  /*margin-left: 20px;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mat-mdc-select {
+  display: flex;
+  width: 30%;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+}

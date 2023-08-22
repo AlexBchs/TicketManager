@@ -1,0 +1,31 @@
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+button {
+  margin: 4px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.context {
+  width: 100%;
+}
+
+.context h1{
+  text-align: center;
+  color: black;
+  font-size: 50px;
+  margin-top: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.actif {
+  background-color: black;
+  color: white;
+  border-color: black;
+}

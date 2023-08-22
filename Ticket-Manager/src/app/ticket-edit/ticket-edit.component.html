@@ -1,0 +1,36 @@
+<app-header></app-header>
+
+<div class="form-container">
+  <mat-card>
+    <div *ngIf="ticket">
+      <h2>Details of ticket #{{ticket.id}} - Edit</h2>
+      <form (ngSubmit)="save()" #editForm="ngForm">
+        <div class="mb-3 form-group">
+          <label for="title" class="form-label">Ticket Title : </label>
+          <input id="title" type="text" class="form-control" required minlength="5" maxlength="70" [(ngModel)]="ticket.title" name="title" #title="ngModel">
+          <div [hidden]="title.valid || description.untouched" class="alert alert-danger">
+            Title is required (min 5 characters)
+          </div>
+        </div>
+        <div class="mb-3 form-group">
+          <label for="description" class="form-label">Ticket description : </label>
+          <textarea id="description" type="text" class="form-control" required minlength="20" [(ngModel)]="ticket.description" name="description" #description="ngModel"></textarea>
+          <div [hidden]="description.valid || description.untouched" class="alert alert-danger">
+            Give a description of your issue (min 20 characters)
+          </div>
+        </div>
+        <div>
+          <mat-label>Ticket State : </mat-label>
+          <mat-select [(ngModel)]="ticket.state" name="state" id="state">
+            <mat-option *ngFor="let ste of states" [value]="ste">
+              {{ste}}
+            </mat-option>
+          </mat-select>
+        </div>
+        <button type="button" class="btn btn-outline-secondary" (click)="goBack()">Return</button>
+        <button type="button" class="btn btn-success" (click)="save(); editForm.reset()" [disabled]="!editForm.form.valid">Save</button>
+      </form>
+    </div>
+  </mat-card>
+</div>
+
